@@ -17,5 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/name',[NameController::class,'index']);
+Route::resource('/students', App\Http\Controllers\StudentsController::class);
